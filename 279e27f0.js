@@ -91,7 +91,7 @@ console.warn("The main 'lit-element' module entrypoint is deprecated. Please upd
             <div class="homeOne">
                 <div class="container">
                     <div class="home-var">
-                        <button class="btn-home" @click="${this.goPage}" name="about"> Conocenos </button>
+                        <button class="btn-home" @click="${this.goPage}" name="about"> Conócenos </button>
                         <button class="btn-home" @click="${this.goPage}" name="news">  Noticias </button>
                         <button class="btn-home" @click="${this.goPage}" name="projects"> Proyectos </button>
                         <button class="btn-home" @click="${this.goPage}" name="contact">  Contacto </button>
@@ -909,6 +909,11 @@ iframe {
     background-image:url(src/img/pjts/dbae/mbr-1920x1357.jpg);
     background-attachment: fixed;
     background-size: cover;
+    height: 775vh;
+ 
+}
+ttech-nav {
+    position: absolute;
 }
 .pjOne h3 {
     text-align: center;
@@ -922,9 +927,12 @@ iframe {
 
 .levels {
     display: flex;
+    position: relative;
+    top: 220px;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    z-index: 10;
 }
 .btn-home {
         position: relative;
